@@ -1,7 +1,5 @@
 template(name='layout')
 	.container
-		header.navbar
-			.navbar-inner
-				a(class='brand', href="{{pathFor 'postsList'}}") Abe Online
+		+header
 		#main.row-fluid
 			+yield
